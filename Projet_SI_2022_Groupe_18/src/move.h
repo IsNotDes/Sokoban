@@ -1,0 +1,1 @@
+void move(int direction, int x, int y, int *nb_lignes, int *nb_colonnes, char** tab, unsigned int* compteur_mouvements, unsigned int* compteur_poussees);

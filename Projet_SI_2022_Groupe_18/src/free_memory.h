@@ -1,0 +1,1 @@
+void free_memory(int* nb_lignes, char** tab);

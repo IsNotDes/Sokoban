@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "graphlib.h": "c",
+        "stdlib.h": "c"
+    }
+}
