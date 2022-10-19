@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Oct 16 15:23:47 2022
+# Make data base, printed on Wed Oct 19 12:29:04 2022
 
 # Variables
 
@@ -63,7 +65,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-T6wLQ015WVQx/agent.959
+SSH_AUTH_SOCK = /tmp/ssh-ctkXAkxqza9q/agent.1222
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -77,13 +79,13 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 46322
+VSCODE_PID = 1912
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1114,unix/MSI:/tmp/.ICE-unix/1114
+SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1383,unix/MSI:/tmp/.ICE-unix/1383
 # automatic
 *F = $(notdir $*)
 # environment
@@ -100,8 +102,6 @@ MAKE_HOST := x86_64-pc-linux-gnu
 SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
-# environment
-PLATFORMIO_CALLER = vscode
 # environment
 SHLVL = 0
 # environment
@@ -125,8 +125,6 @@ KDE_APPLICATIONS_AS_SCOPE = 1
 # environment
 XDG_SEAT = seat0
 # environment
-NO_PROXY = 127.0.0.1
-# environment
 XDG_CURRENT_DESKTOP = KDE
 # environment
 LS_COLORS = 
@@ -143,8 +141,6 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = des
 # environment
-PLATFORMIO_PATH = /home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-# environment
 XDG_VTNR = 7
 # makefile
 .DEFAULT_GOAL := 
@@ -159,7 +155,7 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SSH_AGENT_PID = 1014
+SSH_AGENT_PID = 1269
 # environment
 _ = /usr/share/code/code
 # environment
@@ -170,8 +166,6 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-PLATFORMIO_IDE = 2.5.4
 # environment
 GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/des/.gtkrc-2.0:/home/des/.config/gtkrc-2.0
 # environment
@@ -199,7 +193,7 @@ KDE_SESSION_VERSION = 5
 # environment
 KDE_FULL_SESSION = true
 # variable set hash-table stats:
-# Load=94/1024=9%, Rehash=0, Collisions=2/121=2%
+# Load=90/1024=9%, Rehash=0, Collisions=2/117=2%
 
 # Pattern-specific Variable Values
 
@@ -207,9 +201,9 @@ KDE_FULL_SESSION = true
 
 # Directories
 
-# . (device 66310, inode 1315406): 10 files, no impossibilities.
+# . (device 66310, inode 1315406): 13 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -259,14 +253,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 189 B / avg = 10 B
-# current buf: size = 8162 B / used = 189 B / count = 18 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 216 B / avg = 10 B
+# current buf: size = 8162 B / used = 216 B / count = 21 / avg = 10 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Sun Oct 16 15:23:47 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
+# Finished Make data base on Wed Oct 19 12:29:04 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-
