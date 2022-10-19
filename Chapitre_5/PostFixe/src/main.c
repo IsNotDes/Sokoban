@@ -50,26 +50,3 @@ int main() {
     printf("Le résultat de l'opération post-fixe est : %d \n", res);
     return 0;
 }
-
-/* 
-
-while (!estPileVide(maPile)) {
-    switch(depiler(p1)) {
-        case('+') :
-            empiler(p1, (depiler(p2)+depiler(p2)));
-            break;
-        case('-') :
-            empiler(p1, (-depiler(p2)+depiler(p2)));
-            break;
-        case('*') :
-            empiler(p1, (depiler(p2)*depiler(p2)));
-            break;
-        case('/') :
-            empiler(p1, (depiler(p2)/depiler(p2)));
-            break;
-        default :
-            break;
-    }
-}
-
-*/

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Oct 18 18:11:38 2022
+# Make data base, printed on Wed Oct 19 08:31:26 2022
 
 # Variables
 
@@ -67,7 +67,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-GyYPfpez34Rm/agent.938
+SSH_AUTH_SOCK = /tmp/ssh-sjKXpysl8iAU/agent.934
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -81,13 +81,13 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2906
+VSCODE_PID = 2721
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1094,unix/MSI:/tmp/.ICE-unix/1094
+SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1089,unix/MSI:/tmp/.ICE-unix/1089
 # automatic
 *F = $(notdir $*)
 # environment
@@ -149,7 +149,7 @@ OBJETS = compil/main.o compil/pile.o
 # environment
 LOGNAME = des
 # environment
-PLATFORMIO_PATH = /home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+PLATFORMIO_PATH = /home/des/.platformio/penv/bin:/home/des/.platformio/penv:/home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 # environment
 XDG_VTNR = 7
 # makefile
@@ -165,13 +165,13 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SSH_AGENT_PID = 985
+SSH_AGENT_PID = 991
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 5)
-CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99 
+CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99 -fsanitize=address
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
@@ -258,7 +258,7 @@ compil/pile.o: src/pile.c src/pile.h
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-10-18 09:54:29.948322071
+#  Last modified 2022-10-19 08:31:19.568689045
 #  File has been updated.
 #  Successfully updated.
 
@@ -305,6 +305,7 @@ run:
 	./prog
 
 # files hash-table stats:
+ 
 # Load=12/1024=1%, Rehash=0, Collisions=0/30=0%
 # VPATH Search Paths
 
@@ -312,13 +313,12 @@ run:
 
 # No general ('VPATH' variable) search path.
 
- 
 # strcache buffers: 1 (0) / strings = 19 / storage = 163 B / avg = 8 B
 # current buf: size = 8162 B / used = 163 B / count = 19 / avg = 8 B
 
 # strcache performance: lookups = 32 / hit rate = 40%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=0/32=0%
-# Finished Make data base on Tue Oct 18 18:11:38 2022
+# Finished Make data base on Wed Oct 19 08:31:26 2022
 
  

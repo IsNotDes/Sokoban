@@ -2,7 +2,7 @@ BINAIRE = prog
 
 OBJETS = compil/main.o compil/pile.o
 
-CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99 
+CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99 -fsanitize=address
 
 CC = gcc
 
