@@ -2,18 +2,60 @@
 #include <stdlib.h>
 
 int lireDonnees(char nomFichier[], int T[]) {
-    FILE * fic;
-    int tmp_value = 0;
-    int tmp_scan = 0;
-    int i = 0;
-    fic = fopen("monFichier.txt", "r");
-    while (tmp_scan != EOF) {
-        tmp_scan = fscanf(fic, "%d", &tmp_value);
-        if (tmp_scan == 1) {
-            T[i] = tmp_value;
-            i++;
-        }
+	int count = 0;
+	int elem = ' ';
+	FILE* file = fopen(nomFichier, "r");
+	if (file) {
+		while (fscanf(file, "%d", &elem) != EOF) {
+			T[count] = elem;
+			count++;
+		}
+	}
+	return count;
+}
+
+void afficherTableau(int T[], int nb) {
+	int i;
+	for (i = 0; i < nb; i++) {
+		printf("%d ", T[i]);
     }
-    fclose(fic);
-    return i;
+	printf("\n");
+}
+
+void triABulles(int T[], int nb) {
+	int temp = 0;
+	int sorted = 0;
+	while (!sorted) {
+		sorted = 1;
+		for (int j = 0; j < nb - 1; j++) {
+			if (T[j] < T[j+1]) {
+				sorted = 0;
+				temp = T[j];
+				T[j] = T[j+1];
+				T[j + 1] = temp;
+			}
+		}
+	}
+	afficherTableau(T, nb);
+}
+
+void enregistrerDonnees(char nomFichier[], int T[], int nb) {
+	int i;
+	FILE* file = fopen(nomFichier, "w");
+	if (file) {
+		for (i = 0; i < nb; i++) {
+			fprintf(file, "%d ", T[i]);
+        }
+	}
+	else
+		exit(EXIT_FAILURE);
+}
+
+int main() {
+	int T[20] = {0};
+	int nb = lireDonnees("monFichier.txt", T);
+	afficherTableau(T, nb);
+	triABulles(T, nb);
+	enregistrerDonnees("monFichier.txt", T, nb);
+	return 0;
 }
