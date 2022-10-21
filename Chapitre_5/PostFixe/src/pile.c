@@ -1,4 +1,4 @@
-#include "pile.h"
+#include "../includes/pile.h"
 
 /* R�alisation TRES SIMPLE d'une pile d'entiers
    Ne v�rifie pas les d�bordements

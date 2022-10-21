@@ -2,7 +2,7 @@ BINAIRE = prog
 
 OBJETS = compil/polynome.o
 
-CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99 -fsanitize=address
+CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99
 
 CC = gcc
 

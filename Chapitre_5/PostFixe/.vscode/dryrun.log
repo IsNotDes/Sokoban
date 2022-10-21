@@ -1,6 +1,5 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/des/Documents/CS351/Chapitre_5/PostFixe'
-gcc -o compil/main.o -c src/main.c -g -Wall -ansi -pedantic -lm -std=c99 -fsanitize=address
-gcc -o prog compil/main.o compil/pile.o -g -Wall -ansi -pedantic -lm -std=c99 -fsanitize=address
+make: 'prog' is up to date.
 make: Leaving directory '/home/des/Documents/CS351/Chapitre_5/PostFixe'
  

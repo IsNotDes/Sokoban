@@ -1,52 +1,54 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "pile.h"
+#include <string.h>
+#include "../includes/pile.h"
 
-int calcul_post_fixe() {
+int calcul_post_fixe(const char *chaine) {
     pileInt p1 = creerPile();
-    empiler(p1, '/');
-    empiler(p1, '-');
-    empiler(p1, 7);
-    empiler(p1, 6);
-    empiler(p1, '*');
-    empiler(p1, 5);
-    empiler(p1, '+');
-    empiler(p1, 2);
-    empiler(p1, 4);
-    pileInt p2 = creerPile();
-    while (!estPileVide(p1)) {
-        int n = depiler(p1);
-        int n1 = depiler(p2);
-        int n2 = depiler(p2);
-        empiler(p1, n);
-        empiler(p2, n2);
-        empiler(p2, n1);
-        switch(n) {
-            case('+') :
-                empiler(p2, (n1+n2));
-                break;
-            case('-') :
-                empiler(p2, (-n1+n2));
-                break;
-            case('*') :
-                empiler(p2, (n1*n2));
-                break;
-            case('/') :
-                empiler(p2, (n1/n2));
-                break;
-            default :
-                empiler(p2, n1);
-                break;
+    int size = strlen(chaine);
+    char c;
+    int operande_1;
+    int operande_2;
+    for (int i = 0; i < size; i++) {
+        c = chaine[i];
+        if (c >= '0' && c <= '9') {
+            empiler(p1, c - '0');
+        }
+        else {
+            switch (c) {
+                case '+' :
+                    operande_1 = depiler(p1);
+                    operande_2 = depiler(p1);
+                    empiler(p1, operande_1 + operande_2);
+                    break;
+                case '-' :
+                    operande_1 = depiler(p1);
+                    operande_2 = depiler(p1);
+                    empiler(p1, operande_2 - operande_1);
+                    break;
+                case '*' :
+                    operande_1 = depiler(p1);
+                    operande_2 = depiler(p1);
+                    empiler(p1, operande_1 * operande_2);
+                    break;
+                case '/' :
+                    operande_1 = depiler(p1);
+                    operande_2 = depiler(p1);
+                    empiler(p1, operande_2 / operande_1);
+                    break;
+                case ' ' : 
+                    break;
+                default :
+                    fprintf(stderr, "ERROR FORMAT EXPRESSION");
+                    exit(1);
+            }
         }
     }
-    int res = depiler(p2);
-    free(p1);
-    free(p2);
-    return res;
+    return depiler(p1);
 }
 
 int main() {
-    int res = calcul_post_fixe();
-    printf("Le résultat de l'opération post-fixe est : %d \n", res);
+    char* expression = "4 2 + 5 * 6 7 - /";
+    printf("Le resultat de \"4 2 + 5 * 6 7 -/\" est : %d \n", calcul_post_fixe(expression));
     return 0;
 }

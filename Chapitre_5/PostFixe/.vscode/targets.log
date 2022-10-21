@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Oct 19 08:31:26 2022
+# Make data base, printed on Fri Oct 21 10:23:42 2022
 
 # Variables
 
@@ -67,7 +67,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-sjKXpysl8iAU/agent.934
+SSH_AUTH_SOCK = /tmp/ssh-SbJfCKtEKkii/agent.1220
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -81,13 +81,13 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2721
+VSCODE_PID = 2598
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1089,unix/MSI:/tmp/.ICE-unix/1089
+SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1369,unix/MSI:/tmp/.ICE-unix/1369
 # automatic
 *F = $(notdir $*)
 # environment
@@ -165,13 +165,13 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SSH_AGENT_PID = 991
+SSH_AGENT_PID = 1269
 # environment
 _ = /usr/share/code/code
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 5)
-CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99 -fsanitize=address
+CFLAGS = -g -Wall -lm -std=c99
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
@@ -217,9 +217,9 @@ KDE_FULL_SESSION = true
 
 # Directories
 
-# . (device 66310, inode 1327886): 7 files, no impossibilities.
+# . (device 66310, inode 1327886): 8 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -248,7 +248,7 @@ make:
 	rm -rf compil/*.o
 	make prog
 
-compil/pile.o: src/pile.c src/pile.h
+compil/pile.o: src/pile.c includes/pile.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -258,22 +258,16 @@ compil/pile.o: src/pile.c src/pile.h
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-10-19 08:31:19.568689045
+#  Last modified 2022-10-21 10:23:40.674993694
 #  File has been updated.
 #  Successfully updated.
 
-compil/main.o: src/main.c src/pile.h
+compil/main.o: src/main.c includes/pile.h
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 13):
 	$(CC) -o compil/main.o -c src/main.c $(CFLAGS)
-
-# Not a target:
-src/pile.h:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # Not a target:
 src/main.c:
@@ -304,21 +298,27 @@ run:
 	clear
 	./prog
 
+# Not a target:
+includes/pile.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
- 
 # Load=12/1024=1%, Rehash=0, Collisions=0/30=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
+ 
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 163 B / avg = 8 B
-# current buf: size = 8162 B / used = 163 B / count = 19 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 177 B / avg = 8 B
+# current buf: size = 8162 B / used = 177 B / count = 20 / avg = 8 B
 
-# strcache performance: lookups = 32 / hit rate = 40%
+# strcache performance: lookups = 33 / hit rate = 39%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=0/32=0%
-# Finished Make data base on Wed Oct 19 08:31:26 2022
+# Load=20/8192=0%, Rehash=0, Collisions=0/33=0%
+# Finished Make data base on Fri Oct 21 10:23:42 2022
 
  

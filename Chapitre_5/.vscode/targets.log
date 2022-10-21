@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Oct 18 08:36:41 2022
+# Make data base, printed on Fri Oct 21 10:36:36 2022
 
 # Variables
 
@@ -65,7 +65,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-hTiylFEWIFyd/agent.1200
+SSH_AUTH_SOCK = /tmp/ssh-SbJfCKtEKkii/agent.1220
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -79,13 +79,13 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 5093
+VSCODE_PID = 2598
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1349,unix/MSI:/tmp/.ICE-unix/1349
+SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1369,unix/MSI:/tmp/.ICE-unix/1369
 # automatic
 *F = $(notdir $*)
 # environment
@@ -161,7 +161,7 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SSH_AGENT_PID = 1247
+SSH_AGENT_PID = 1269
 # environment
 _ = /usr/share/code/code
 # environment
@@ -267,6 +267,6 @@ GNUmakefile:
 # strcache performance: lookups = 19 / hit rate = 15%
 # hash-table stats:
 # Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Tue Oct 18 08:36:41 2022
+# Finished Make data base on Fri Oct 21 10:36:36 2022
 
  
