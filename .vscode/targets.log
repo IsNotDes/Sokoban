@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Oct 25 08:39:42 2022
+# Make data base, printed on Tue Oct 25 09:38:15 2022
 
 # Variables
 
@@ -79,7 +79,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6467
+VSCODE_PID = 12674
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -103,6 +103,8 @@ SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
 # environment
+PLATFORMIO_CALLER = vscode
+# environment
 SHLVL = 0
 # environment
 MAKELEVEL := 0
@@ -125,6 +127,8 @@ KDE_APPLICATIONS_AS_SCOPE = 1
 # environment
 XDG_SEAT = seat0
 # environment
+NO_PROXY = 127.0.0.1
+# environment
 XDG_CURRENT_DESKTOP = KDE
 # environment
 LS_COLORS = 
@@ -140,6 +144,8 @@ ORIGINAL_XDG_CURRENT_DESKTOP = KDE
 GNUMAKEFLAGS := 
 # environment
 LOGNAME = des
+# environment
+PLATFORMIO_PATH = /home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 # environment
 XDG_VTNR = 7
 # makefile
@@ -167,6 +173,8 @@ XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
+PLATFORMIO_IDE = 2.5.4
+# environment
 GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/des/.gtkrc-2.0:/home/des/.config/gtkrc-2.0
 # environment
 HOME = /home/des
@@ -193,7 +201,7 @@ KDE_SESSION_VERSION = 5
 # environment
 KDE_FULL_SESSION = true
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=2/117=2%
+# Load=94/1024=9%, Rehash=0, Collisions=2/121=2%
 
 # Pattern-specific Variable Values
 
@@ -259,6 +267,6 @@ GNUmakefile:
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Tue Oct 25 08:39:42 2022
+# Finished Make data base on Tue Oct 25 09:38:15 2022
 
  

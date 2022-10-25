@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int quotient(int a, int b)
-{
+int quotient(int a, int b) {
 	int sign = 1;
 	int q = 0;
 
@@ -22,8 +21,7 @@ int quotient(int a, int b)
 }
 
 
-int reste(int a, int b)
-{
+int reste(int a, int b) {
 	int q = quotient(a, b);
 	int res = a - q * b;
 	if (res < 0)
@@ -33,11 +31,9 @@ int reste(int a, int b)
 }
 
 
-int pgcd(int a, int b)
-{
+int pgcd(int a, int b) {
 	int r = a % b;
-	while (r > 0)
-	{
+	while (r > 0) {
 		a = b;
 		b = r;
 		r = a % b;
@@ -46,25 +42,24 @@ int pgcd(int a, int b)
 }
 
 
-int valeurAbsolue(int val)
-{
+int valeurAbsolue(int val) {
 	return val < 0 ? -val : val;
 }
 
 
-int ppcm(int a, int b)
-{
+int ppcm(int a, int b) {
 	return valeurAbsolue(a * b) / pgcd(a, b);
 }
 
 
-int puissanceMB(int x, int n)
-{
+int puissanceMB(int x, int n) {
 	int r = n, y = 1, z = x;
 	int found = 0;
 	int compteur = 0;
-	while (!found)
-	{
+	if (r == 0) {
+		found = 1;
+	}
+	while (!found) {
 		if (r % 2 != 0)
 		{
 			r /= 2;
@@ -81,19 +76,16 @@ int puissanceMB(int x, int n)
 	return y;
 }
 
-int sommeDesImpairs(int d, int f)
-{
+int sommeDesImpairs(int d, int f) {
 	int res = 0;
 	if (d % 2 == 0 || f % 2 == 0 || d > f)
 		exit(EXIT_FAILURE);
-
 	for (int i = d; i <= f; i += 2)
 		res += i;
 	return res;
 }
 
-int estUneDecompositionDe(int d, int f)
-{
+int estUneDecompositionDe(int d, int f) {
 		int n = ((f - d) / 2) + 1;
 		return sommeDesImpairs(d, f) == n * n * n ? n : -1;
 }
@@ -102,19 +94,19 @@ void testBibliotheque() {
 	printf("Quotient : %d\n", quotient(-6, -2));
 	printf("Quotient : %d\n", quotient(12, 6));
 	printf("Quotient : %d\n", quotient(9, 2));
-	printf("Quotient : %d\n", quotient(7, 0));
+	/* printf("Quotient : %d\n", quotient(7, 0)); */
 
 	printf("Reste : %d\n", reste(12, 6));
 	printf("Reste : %d\n", reste(-6, -5));
 	printf("Reste : %d\n", reste(-6, 11));
-	printf("Reste : %d\n", reste(-4, 0));
+	/* printf("Reste : %d\n", reste(-4, 0)); */
 
 	printf("Valeur absolue : %d\n", valeurAbsolue(3));
 	printf("Valeur absolue : %d\n", valeurAbsolue(-3));
 
 	printf("PPCM : %d\n", ppcm(5, 10));
 	printf("PPCM : %d\n", ppcm(3, 4));
-	printf("PPCM : %d\n", ppcm(7, 0));
+	/* printf("PPCM : %d\n", ppcm(7, 0)); */
 
 	printf("Puissance : %d\n", puissanceMB(3, 3));
 	printf("Puissance : %d\n", puissanceMB(5, 9));
@@ -125,11 +117,11 @@ void testBibliotheque() {
 	printf("%d\n", estUneDecompositionDe(7, 13));
 }
 
-int main()
-{
+int main() {
 	int a, b;
 	printf("a b:");
 	scanf("%d %d", &a, &b);
-	printf("%d\n", estUneDecompositionDe(a, b));
+	estUneDecompositionDe(a, b);
+	testBibliotheque();
 	return 0;
 }
