@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Oct 25 11:07:12 2022
+# Make data base, printed on Tue Oct 25 13:08:38 2022
 
 # Variables
 
@@ -63,7 +63,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-HccNw5APOfhP/agent.1373
+SSH_AUTH_SOCK = /tmp/ssh-uSTvhzGiGlHA/agent.1340
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -77,13 +77,13 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 18577
+VSCODE_PID = 2038
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1511,unix/MSI:/tmp/.ICE-unix/1511
+SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1469,unix/MSI:/tmp/.ICE-unix/1469
 # automatic
 *F = $(notdir $*)
 # environment
@@ -143,7 +143,7 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = des
 # environment
-PLATFORMIO_PATH = /home/des/.platformio/penv/bin:/home/des/.platformio/penv:/home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+PLATFORMIO_PATH = /home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 # environment
 XDG_VTNR = 7
 # makefile
@@ -159,7 +159,7 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SSH_AGENT_PID = 1422
+SSH_AGENT_PID = 1389
 # environment
 _ = /usr/share/code/code
 # environment
@@ -265,7 +265,7 @@ GNUmakefile:
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Tue Oct 25 11:07:12 2022
+# Finished Make data base on Tue Oct 25 13:08:38 2022
 
  
 make: *** No rule to make target 'all'.  Stop.

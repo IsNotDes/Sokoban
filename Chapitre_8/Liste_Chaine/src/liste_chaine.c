@@ -51,13 +51,12 @@ void freeListe(Element* liste) {
 int main() {
     Element* e = malloc(sizeof(Element)/sizeof(char));
     e -> suivant = NULL;
-    e -> valeur = 0;
     afficherListe(e);
     for(int i = 0; i < 10; i++) {
         insertListe(i,e);
         afficherListe(e);
     }
-    for (int i = 9; i > -1; i--) {
+    for (int i = 9; i >= 0; i--) {
         deleteListe(i,e);
         afficherListe(e);
     }
