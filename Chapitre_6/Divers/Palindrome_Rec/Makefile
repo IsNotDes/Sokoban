@@ -1,6 +1,6 @@
 BINAIRE = prog
 
-OBJETS = compil/module.o
+OBJETS = compil/palindrome_rec.o
 
 CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99
 
@@ -9,8 +9,8 @@ CC = gcc
 prog: $(OBJETS)
 	$(CC) -o $(BINAIRE) $(OBJETS) $(CFLAGS)
 
-compil/module.o: src/module.c 
-	$(CC) -o compil/module.o -c src/module.c $(CFLAGS)
+compil/palindrome_rec.o: src/palindrome_rec.c 
+	$(CC) -o compil/palindrome_rec.o -c src/palindrome_rec.c $(CFLAGS)
 
 make:
 	rm -rf compil/*.o

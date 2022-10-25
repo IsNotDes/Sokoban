@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Oct 25 08:39:42 2022
+# Make data base, printed on Sun Oct 23 10:59:18 2022
 
 # Variables
 
@@ -31,7 +29,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/des/Documents/CS351
+PWD = /home/des/Documents/CS351/Chapitre_2
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -55,7 +53,7 @@ XAUTHORITY = /home/des/.Xauthority
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/des/Documents/CS351
+CURDIR := /home/des/Documents/CS351/Chapitre_2
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
@@ -65,7 +63,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-HccNw5APOfhP/agent.1373
+SSH_AUTH_SOCK = /tmp/ssh-8ehUNBDltIYx/agent.1334
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -79,13 +77,13 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6467
+VSCODE_PID = 1920
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1511,unix/MSI:/tmp/.ICE-unix/1511
+SESSION_MANAGER = local/MSI:@/tmp/.ICE-unix/1469,unix/MSI:/tmp/.ICE-unix/1469
 # automatic
 *F = $(notdir $*)
 # environment
@@ -102,6 +100,8 @@ MAKE_HOST := x86_64-pc-linux-gnu
 SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
+# environment
+PLATFORMIO_CALLER = vscode
 # environment
 SHLVL = 0
 # environment
@@ -125,6 +125,8 @@ KDE_APPLICATIONS_AS_SCOPE = 1
 # environment
 XDG_SEAT = seat0
 # environment
+NO_PROXY = 127.0.0.1
+# environment
 XDG_CURRENT_DESKTOP = KDE
 # environment
 LS_COLORS = 
@@ -141,6 +143,8 @@ GNUMAKEFLAGS :=
 # environment
 LOGNAME = des
 # environment
+PLATFORMIO_PATH = /home/des/.platformio/python3/bin:/home/des/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+# environment
 XDG_VTNR = 7
 # makefile
 .DEFAULT_GOAL := 
@@ -155,7 +159,7 @@ MAKE_VERSION := 4.3
 # environment
 KDE_SESSION_UID = 1000
 # environment
-SSH_AGENT_PID = 1422
+SSH_AGENT_PID = 1383
 # environment
 _ = /usr/share/code/code
 # environment
@@ -166,6 +170,8 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PLATFORMIO_IDE = 2.5.4
 # environment
 GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/des/.gtkrc-2.0:/home/des/.config/gtkrc-2.0
 # environment
@@ -193,7 +199,7 @@ KDE_SESSION_VERSION = 5
 # environment
 KDE_FULL_SESSION = true
 # variable set hash-table stats:
-# Load=90/1024=9%, Rehash=0, Collisions=2/117=2%
+# Load=94/1024=9%, Rehash=0, Collisions=2/121=2%
 
 # Pattern-specific Variable Values
 
@@ -201,9 +207,9 @@ KDE_FULL_SESSION = true
 
 # Directories
 
-# . (device 66310, inode 1315406): 13 files, no impossibilities.
+# . (device 66310, inode 1451599): 5 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 5 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -253,12 +259,14 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 216 B / avg = 10 B
-# current buf: size = 8162 B / used = 216 B / count = 21 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 13 / storage = 128 B / avg = 9 B
+# current buf: size = 8162 B / used = 128 B / count = 13 / avg = 9 B
 
-# strcache performance: lookups = 24 / hit rate = 12%
+# strcache performance: lookups = 16 / hit rate = 18%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
-# Finished Make data base on Tue Oct 25 08:39:42 2022
+# Load=13/8192=0%, Rehash=0, Collisions=0/16=0%
+# Finished Make data base on Sun Oct 23 10:59:18 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+

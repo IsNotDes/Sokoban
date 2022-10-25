@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/des/Documents/CS351/Chapitre_5/PostFixe'
+make: 'prog' is up to date.
+make: Leaving directory '/home/des/Documents/CS351/Chapitre_5/PostFixe'
+ 

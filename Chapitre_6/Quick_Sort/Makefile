@@ -1,6 +1,6 @@
 BINAIRE = prog
 
-OBJETS = compil/module.o
+OBJETS = compil/quick_sort.o
 
 CFLAGS = -g -Wall -ansi -pedantic -lm -std=c99
 
@@ -9,8 +9,8 @@ CC = gcc
 prog: $(OBJETS)
 	$(CC) -o $(BINAIRE) $(OBJETS) $(CFLAGS)
 
-compil/module.o: src/module.c 
-	$(CC) -o compil/module.o -c src/module.c $(CFLAGS)
+compil/quick_sort.o: src/quick_sort.c 
+	$(CC) -o compil/quick_sort.o -c src/quick_sort.c $(CFLAGS)
 
 make:
 	rm -rf compil/*.o

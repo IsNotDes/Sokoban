@@ -18,13 +18,21 @@ char *myStrlcpy(char *d, char *s) {
     return d;
 }
 
-/* int affichageEnHexadecimal(char *s) {
+void affichagerEnHexadecimal(char* str)
+{
+	int len = strlen(str);
+	printf("Affichage en hexadecimal :\n");
+	for (int i = 0; i < len; i++)
+		printf("%x \n", str[i]);
+}
 
-} */
-
-/* int affichageEnDecimal() {
-
-} */
+void affichagerEnDecimal(char* str)
+{
+	int len = strlen(str);
+	printf("Affichage en decimal :\n");
+	for (int i = 0; i < len; i++)
+		printf("%d \n", str[i]);
+}
 
 char *mettreEnMajuscule(char *s) {
     for (int i = 0; s[i] != '\0'; i++) {
@@ -37,48 +45,114 @@ char *mettreEnMajuscule(char *s) {
 char *mettreEnMinuscule(char *s) {
     for (int i = 0; s[i] != '\0'; i++) {
         if (s[i]  >= 'A' && s[i] <= 'Z')
-            s[i] += 32;
+            s[i] += 'a' - 'A';
     }
     return s;
 }
 
-/* int transformerMinMaj() {
+char* transformerMinMaj(char* str)
+{
+	int i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+			str[i] -= 'a' - 'A';
+		else
+			if (str[i] >= 'A' && str[i] <= 'A')
+				str[i] += 'a' - 'A';
+		i++;
+	}
+	return str;
+}
 
-} */
+char* retournerMot(char* str)
+{
+	int len = strlen(str)-1;
+	char temp = ' ';
+	for (int i = 0; i <= len /2; i++)
+	{
+		temp = str[i];
+		str[i] = str[len - i];
+		str[len - i] = temp;
+	}
+	printf("%s\n", str);
+	return str;
+}
 
-/* int retournerMot() {
+int rechercherCaractereG(char* str, char c)
+{
+	int i = 0;
+	int found = 0;
+	while (str[i] != '\0' && !found)
+	{
+		if (str[i] == c)
+			found = 1;
 
-} */
+		i++;
+	}
+	if (!found)
+		i = 0;
+	return i-1;
+}
 
-/* int rechercherCaractereG() {
+int rechercherCaractereD(char* str, char c)
+{
+	int i = strlen(str)-1;
+	int found = 0;
+	while (i > 0 && !found)
+	{
+		if (str[i] == c)
+			found = 1;
 
-} */
+		i--;
+	}
+	if (!found)
+		i = -2;
+	return i + 1;
+}
 
-/* int rechercherCaractereD() {
+int estPalindrome(char* str, int d, int f)
+{
+	int i = d;
+	int notPalindrome = 1;
+	while (i < f && notPalindrome)
+	{
+		if (str[i] != str[f - i])
+			notPalindrome = 0;
+		i++;
+	}
+	return notPalindrome;
+}
 
-} */
+int comparerChaine(char* str1, char* str2)
+{
+	unsigned int i = 0;
+	int found = 0;
+	unsigned int len = strlen(str1);
+	if (strlen(str2) > len)
+		len = strlen(str2);
 
-/* int estPalindrome(char *mot, int d, int f) {
-
-} */
-
-/* int comparerChaine(char *s) {
-    
-} */
+	while(i < len && !found)
+	{
+		if (str1[i] != str2[i])
+			found = str1[i] - str2[i];
+		i++;
+	}
+	return found;
+}
 
 int valeurDecimale(char *s) {
     int Nombre = 0;
     int Pow = 1;
     int n = myStrlen(s);
     for (int i = n-1; i >= 0; i--) { 
-        Nombre += (s[i] - 48)*Pow;
+        Nombre += (s[i] - '0')*Pow;
         Pow *= 10;
     }
     return Nombre;
 }
 
 char *intVersChaine(int n, char *s) {
-    
     int Pow = 1000;
     int nbr = 4;
     for (int i = 0; i <= nbr-1; i++) {
