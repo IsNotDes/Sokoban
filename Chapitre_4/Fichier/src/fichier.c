@@ -15,15 +15,14 @@ int lireDonnees(char nomFichier[], int T[]) {
 }
 
 void afficherTableau(int T[], int nb) {
-	int i;
-	for (i = 0; i < nb; i++) {
+	for (int i = 0; i < nb; i++) {
 		printf("%d ", T[i]);
     }
 	printf("\n");
 }
 
 void triABulles(int T[], int nb) {
-	int temp = 0;
+	int temp;
 	int sorted = 0;
 	while (!sorted) {
 		sorted = 1;
@@ -32,7 +31,7 @@ void triABulles(int T[], int nb) {
 				sorted = 0;
 				temp = T[j];
 				T[j] = T[j+1];
-				T[j + 1] = temp;
+				T[j+1] = temp;
 			}
 		}
 	}

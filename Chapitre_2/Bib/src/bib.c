@@ -20,7 +20,6 @@ int quotient(int a, int b) {
 	return q;
 }
 
-
 int reste(int a, int b) {
 	int q = quotient(a, b);
 	int res = a - q * b;
@@ -29,7 +28,6 @@ int reste(int a, int b) {
 
 	return res;
 }
-
 
 int pgcd(int a, int b) {
 	int r = a % b;
@@ -41,39 +39,31 @@ int pgcd(int a, int b) {
 	return b;
 }
 
-
 int valeurAbsolue(int val) {
 	return val < 0 ? -val : val;
 }
-
 
 int ppcm(int a, int b) {
 	return valeurAbsolue(a * b) / pgcd(a, b);
 }
 
-
 int puissanceMB(int x, int n) {
-	int r = n, y = 1, z = x;
-	int found = 0;
-	int compteur = 0;
-	if (r == 0) {
-		found = 1;
-	}
-	while (!found) {
-		if (r % 2 != 0)
-		{
-			r /= 2;
-			y = z * y;
-			if (r == 0)
-				found = 1;
-		}
-		else
-			r /= 2;
-		z = z * z;
-		compteur++;
-	}
-	printf("Le nombre d'operations pour %d puissance %d est : %d\n", x, n, compteur);
-	return y;
+    int y = 1;
+	int z = x;
+    while (n > 0) {
+        if (n%2 == 0) {
+            n /= 2;
+        } 
+		else {
+            n /= 2;
+            y *= z;
+        }
+        if (n == 0) {
+            return y;
+        }
+        z *= z;
+    }
+    return y;
 }
 
 int sommeDesImpairs(int d, int f) {
