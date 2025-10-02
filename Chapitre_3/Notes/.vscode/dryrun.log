@@ -1,6 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/des/Documents/CS351/Chapitre_3/Notes'
-gcc -o compil/notes.o -c src/notes.c -Wall -ansi -pedantic -lm
-gcc -o prog compil/notes.o -Wall -ansi -pedantic -lm
-make: Leaving directory '/home/des/Documents/CS351/Chapitre_3/Notes'
- 
