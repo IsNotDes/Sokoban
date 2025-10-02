@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "graphlib.h": "c",
-        "stdlib.h": "c",
-        "liste_chaine.h": "c"
-    }
-}
